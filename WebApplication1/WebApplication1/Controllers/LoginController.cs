@@ -6,13 +6,14 @@ using System.Web;
 using System.Web.Mvc;
 using WebApplication1.Models;
 using WebApplication1.Services.Business;
+using WebApplication1.Services.Utility;
 
 namespace WebApplication1.Controllers
 {
     public class LoginController : Controller
     {
         // GET: Login
-        private static Logger logger = LogManager.GetLogger("myAppLoggerRules");
+        //private static Logger logger = LogManager.GetLogger("myAppLoggerRules");
         public ActionResult Index()
         {
             return View("Login");
@@ -21,7 +22,8 @@ namespace WebApplication1.Controllers
         public ActionResult Login(UserModel userModel)
         {
             // put an item in the log
-            logger.Info("Entering the login controller.  Login method");
+            //logger.Info("Entering the login controller.  Login method");
+            MyLogger.GetInstance().Info("Entering the login controller.  Login method");
             //return "Results: Username: "+userModel.Username+" Password: "+userModel.Password;
 
             try
@@ -35,19 +37,21 @@ namespace WebApplication1.Controllers
 
                 if (success)
                 {
-                    logger.Info("Exit login controller. Login success!");
-
+                    //logger.Info("Exit login controller. Login success!");
+                    MyLogger.GetInstance().Info("Exit login controller. Login success!");
                     return View("LoginSuccess", userModel);
                 }
                 else
                 {
-                    logger.Info("Exit login controller. Login failure!");
+                    //logger.Info("Exit login controller. Login failure!");
+                    MyLogger.GetInstance().Info("Exit login controller. Login failure!");
                     return View("LoginFailure");
                 }
             }
             catch (Exception e)
             {
-                logger.Error(e.Message);
+                //logger.Error(e.Message);
+                MyLogger.GetInstance().Error(e.Message);
                 return Content("Exception in login" + e.Message);
             }
 
