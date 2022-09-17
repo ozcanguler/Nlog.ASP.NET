@@ -1,0 +1,7 @@
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\bin\WcfService.dll.config
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\bin\WcfService.dll
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\bin\WcfService.pdb
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\obj\Debug\WcfService.csprojAssemblyReference.cache
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\obj\Debug\WcfService.dll
+C:\Users\Garavel\Desktop\Sluiter\ASP.NET_MVC\EnterpriseFeatures\nlogin\WebApplication1\WcfService\obj\Debug\WcfService.pdb
